@@ -22,7 +22,7 @@ export default function Contact() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <span className="text-sm font-mono text-primary mb-3 block">// contact</span>
+            <span className="text-sm font-mono text-primary mb-3 block">{"// contact"}</span>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
               Let&apos;s build
               <br />

@@ -16,6 +16,15 @@ const services = [
   {
     icon: (
       <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 00-2.455 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z" />
+      </svg>
+    ),
+    title: "AI Integration",
+    desc: "Intelligent systems that work. AI agents, LLM integration, and model optimization that cuts costs and delivers results.",
+  },
+  {
+    icon: (
+      <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
         <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
       </svg>
     ),
@@ -103,8 +112,9 @@ export default function Home() {
               variants={fadeUp}
               className="text-lg sm:text-xl text-muted max-w-xl mb-10 leading-relaxed"
             >
-              Cloud engineering, web development, and DevOps consulting for
-              companies that need reliable systems and fast delivery.
+              AI integration, cloud engineering, and web development for
+              companies that need intelligent systems, beautiful interfaces,
+              and infrastructure that scales.
             </motion.p>
 
             <motion.div
@@ -143,17 +153,17 @@ export default function Home() {
             transition={{ duration: 0.5 }}
             className="mb-16"
           >
-            <span className="text-sm font-mono text-primary mb-3 block">// what we do</span>
+            <span className="text-sm font-mono text-primary mb-3 block">{"// what we do"}</span>
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">
               Full-stack engineering,<br />zero hand-holding.
             </h2>
             <p className="text-muted max-w-lg">
-              From concept to production. We handle the hard stuff so you can
-              focus on your business.
+              From AI integration to production deployment. We handle the hard
+              stuff so you can focus on your business.
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {services.map((service, i) => (
               <motion.div
                 key={service.title}

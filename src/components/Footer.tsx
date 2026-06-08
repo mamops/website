@@ -7,6 +7,7 @@ const footerLinks = {
     { href: "/contact", label: "Contact" },
   ],
   services: [
+    { href: "/services#ai-integration", label: "AI Integration" },
     { href: "/services#web-development", label: "Web Development" },
     { href: "/services#devops", label: "DevOps" },
     { href: "/services#consulting", label: "Consulting" },
