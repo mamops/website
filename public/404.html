@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mamops</title>
+  <script>
+    // GitHub Pages SPA redirect
+    // Try to reconstruct the path from the 404 URL and redirect to index
+    var repo = '/website';
+    var path = window.location.pathname;
+    
+    // If the path starts with the repo, strip it
+    if (path.startsWith(repo)) {
+      path = path.slice(repo.length);
+    }
+    
+    // Store the path for the SPA router to pick up
+    sessionStorage.setItem('redirectPath', path + window.location.search);
+    
+    // Redirect to root
+    window.location.replace(repo + '/');
+  </script>
+</head>
+<body>
+  <noscript>
+    <p>Page not found. <a href="/website/">Go to homepage</a>.</p>
+  </noscript>
+</body>
+</html>

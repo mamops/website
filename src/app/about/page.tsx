@@ -182,6 +182,37 @@ export default function About() {
         </div>
       </section>
 
+      {/* Proof of work */}
+      <section className="py-24 border-y border-border bg-surface relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/5 via-transparent to-accent/5" />
+        <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="text-center max-w-2xl mx-auto"
+          >
+            <span className="text-sm font-mono text-primary mb-3 block">{"// proof of work"}</span>
+            <h2 className="text-3xl sm:text-4xl font-bold mb-6">
+              This site? 2 commits.
+            </h2>
+            <p className="text-lg text-muted leading-relaxed mb-8">
+              <span className="text-foreground font-semibold">init.</span> then{" "}
+              <span className="text-foreground font-semibold">deploy.</span> No
+              wasted cycles. No over-engineering. Just a working product shipped
+              fast, then improved with intention. That is how we build
+              everything.
+            </p>
+            <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full border border-border bg-background font-mono text-sm">
+              <span className="text-green-500">$</span>
+              <span className="text-muted">git log --oneline</span>
+              <span className="text-primary">2 commits</span>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* Team */}
       <section className="py-24 lg:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
