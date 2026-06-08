@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const footerLinks = {
   company: [
@@ -18,18 +19,17 @@ const footerLinks = {
 export function Footer() {
   return (
     <footer className="border-t border-border bg-surface">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8 py-12 lg:py-16">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 lg:gap-12">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8 py-10 lg:py-14">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 lg:gap-10">
           <div className="md:col-span-2">
-            <Link href="/" className="flex items-center gap-2 mb-4">
-              <div className="flex h-8 w-8 items-center justify-center rounded bg-primary/10 border border-primary/20">
-                <span className="font-mono text-sm font-bold text-primary">
-                  m.
-                </span>
-              </div>
-              <span className="text-lg font-semibold tracking-tight">
-                mamops
-              </span>
+            <Link href="/" className="inline-flex items-center mb-4" aria-label="mamops home">
+              <Image
+                src="/website/logo-wordmark.png"
+                alt="mamops"
+                width={1024}
+                height={416}
+                className="h-7 w-auto"
+              />
             </Link>
             <p className="text-sm text-muted max-w-sm leading-relaxed">
               Engineering digital infrastructure for companies that move fast.

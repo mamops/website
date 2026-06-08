@@ -14,10 +14,32 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const description =
+  "We engineer cloud infrastructure, build web platforms, and drive digital transformation. Consulting, development, and DevOps for companies that move fast.";
+
 export const metadata: Metadata = {
   title: "Mamops | Engineering Digital Infrastructure",
-  description:
-    "We engineer cloud infrastructure, build web platforms, and drive digital transformation. Consulting, development, and DevOps for companies that move fast.",
+  description,
+  openGraph: {
+    title: "Mamops | Engineering Digital Infrastructure",
+    description,
+    siteName: "Mamops",
+    type: "website",
+    images: [
+      {
+        url: "/website/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "mamops",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Mamops | Engineering Digital Infrastructure",
+    description,
+    images: ["/website/og-image.png"],
+  },
 };
 
 export default function RootLayout({

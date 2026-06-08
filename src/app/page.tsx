@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 const fadeUp = {
@@ -76,6 +77,23 @@ export default function Home() {
 
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-[120px] animate-pulse-glow" />
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent/5 rounded-full blur-[120px] animate-pulse-glow" style={{ animationDelay: "1.5s" }} />
+
+        <motion.div
+          initial={{ opacity: 0, scale: 0.92 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+          className="pointer-events-none absolute right-0 top-1/2 hidden -translate-y-1/2 lg:block"
+        >
+          <Image
+            src="/website/logo-mark.png"
+            alt=""
+            aria-hidden="true"
+            width={745}
+            height={500}
+            priority
+            className="w-[36rem] xl:w-[44rem] opacity-[0.07] animate-float select-none [filter:drop-shadow(0_0_60px_rgba(0,212,255,0.25))]"
+          />
+        </motion.div>
 
         <div className="relative mx-auto max-w-7xl px-6 lg:px-8 pt-32 pb-20">
           <div className="max-w-3xl">

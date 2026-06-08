@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -15,18 +16,18 @@ export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 border-b border-border bg-background/80 backdrop-blur-xl">
+    <nav className="fixed top-0 left-0 right-0 z-50 border-b border-border bg-background/80 backdrop-blur-xl shadow-[0_1px_0_rgba(0,212,255,0.08)]">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="flex h-16 items-center justify-between">
-          <Link href="/" className="flex items-center gap-2 group">
-            <div className="relative flex h-8 w-8 items-center justify-center rounded bg-primary/10 border border-primary/20 group-hover:bg-primary/20 transition-colors">
-              <span className="font-mono text-sm font-bold text-primary">
-                m.
-              </span>
-            </div>
-            <span className="text-lg font-semibold tracking-tight">
-              mamops
-            </span>
+        <div className="flex h-14 items-center justify-between">
+          <Link href="/" className="flex items-center group" aria-label="mamops home">
+            <Image
+              src="/website/logo-wordmark.png"
+              alt="mamops"
+              width={1024}
+              height={416}
+              priority
+              className="h-6 w-auto transition-transform duration-300 group-hover:scale-105"
+            />
           </Link>
 
           <div className="hidden md:flex items-center gap-1">
