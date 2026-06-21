@@ -5,14 +5,15 @@ const footerLinks = {
   company: [
     { href: "/about", label: "About" },
     { href: "/services", label: "Services" },
+    { href: "/work", label: "Work" },
     { href: "/contact", label: "Contact" },
   ],
   services: [
+    { href: "/services#web-development", label: "Web & App Development" },
     { href: "/services#ai-integration", label: "AI Integration" },
-    { href: "/services#web-development", label: "Web Development" },
-    { href: "/services#devops", label: "DevOps" },
+    { href: "/services#ux-ui-design", label: "UX/UI Design" },
+    { href: "/services#cloud-infrastructure", label: "Cloud & Infrastructure" },
     { href: "/services#consulting", label: "Consulting" },
-    { href: "/services#azure", label: "Azure" },
   ],
 };
 
@@ -32,8 +33,9 @@ export function Footer() {
               />
             </Link>
             <p className="text-sm text-muted max-w-sm leading-relaxed">
-              Engineering digital infrastructure for companies that move fast.
-              Cloud, code, and everything in between.
+              Full-stack development, AI integration, and cloud infrastructure
+              for founders who need to ship. Senior engineers, one team, no
+              handoffs.
             </p>
           </div>
 

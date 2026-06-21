@@ -29,8 +29,9 @@ export default function Contact() {
               <span className="gradient-text">something great</span>
             </h1>
             <p className="text-lg text-muted leading-relaxed mb-12">
-              Have a project in mind? Need help with your infrastructure?
-              Drop us a line. We respond within 24 hours.
+              Have a project in mind? Need an MVP, an AI feature, or your
+              infrastructure sorted out? Drop us a line — we respond within 24
+              hours.
             </p>
 
             <div className="space-y-8">
@@ -95,7 +96,7 @@ export default function Contact() {
               action="mailto:hello@mamops.dev"
               method="post"
               encType="text/plain"
-              className="p-6 lg:p-8 rounded-xl border border-border bg-surface space-y-6"
+              className="p-6 lg:p-8 rounded-xl border border-border bg-surface shadow-sm space-y-6"
             >
               <div>
                 <label
@@ -144,10 +145,11 @@ export default function Contact() {
                   className="w-full px-4 py-3 rounded-lg bg-background border border-border text-foreground focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors"
                 >
                   <option value="general">General inquiry</option>
-                  <option value="web">Web Development</option>
-                  <option value="devops">DevOps</option>
+                  <option value="web">Web &amp; App Development</option>
+                  <option value="ai">AI Integration</option>
+                  <option value="design">UX/UI Design</option>
+                  <option value="cloud">Cloud &amp; Infrastructure</option>
                   <option value="consulting">Consulting</option>
-                  <option value="azure">Azure Cloud</option>
                 </select>
               </div>
 
